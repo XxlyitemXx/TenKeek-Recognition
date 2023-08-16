@@ -14,12 +14,12 @@ encodingsP = "encodings.pickle"
 cascade = "haarcascade_frontalface_default.xml"
 
 
-print("[INFO] loading encodings + face detector...")
+print("[INFO][**เล็ก**] เล็กกำลัง encodings + face detector...")
 data = pickle.loads(open(encodingsP, "rb").read())
 detector = cv2.CascadeClassifier(cascade)
 
 
-print("[INFO] starting video stream...")
+print("[INFO][**เล็ก**]  เล็กกำลังเริ่มจ้าาา")
 vs = VideoStream(src=0).start()
 time.sleep(2.0)
 
@@ -87,7 +87,7 @@ while True:
 			.8, (255, 0, 0), 2)
 
 
-	cv2.imshow("Facial Recognition is Running", frame)
+	cv2.imshow(" [**เล็ก**] Facial Recognition is Running", frame)
 	key = cv2.waitKey(1) & 0xFF
 
 
@@ -99,8 +99,8 @@ while True:
 
 
 fps.stop()
-print("[INFO] elasped time: {:.2f}".format(fps.elapsed()))
-print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
+print("[INFO] [**เล็ก**] อ่ะ time: {:.2f}".format(fps.elapsed()))
+print("[INFO] [**เล็ก**] เคป่ะ FPS: {:.2f}".format(fps.fps()))
 
 
 cv2.destroyAllWindows()
