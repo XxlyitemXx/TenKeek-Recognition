@@ -1,6 +1,4 @@
-# projectbeta
+This Is Beta
 
-# install imtuill,opencv and face_recognition
-# before  run program 
-
-# have fun bro
+install imtuill,opencv and face_recognition
+before use da program 
